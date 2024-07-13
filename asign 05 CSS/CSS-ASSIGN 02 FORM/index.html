@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford University London</title>
+    <link rel="shortcut icon" type="image/x-icon" href="C:\Users\REC\Desktop\SMIT HTML\Assignment 02 form\images\1.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: orange; /* Background color for the entire page */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff; /* White background for the form */
+            max-width: 600px; /* Limit width of the form */
+            margin: 20px auto; /* Center align and add space around the form */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for the form */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="radio"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Gray border for input elements */
+            border-radius: 5px; /* Rounded corners for input elements */
+            font-size: 16px;
+            margin: 5px; /* Gray margin around input fields */
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 5px;">
+        <img src="C:\Users\REC\Desktop\SMIT HTML\Assignment 02 form images\images.png" alt="Logo not found" width="200" height="100">
+    </div>
+
+    <h1>Student Portal</h1>
+    <p>Welcome to the student portal!</p>
+
+    <form onsubmit="alert('Thank you! The test date will be emailed to you.'); return false;">
+        <label for="studentName"><b>*Student Name:</b></label>
+        <input type="text" id="studentName" name="studentName" placeholder="Maximum 20 letters" maxlength="20" required><br><br>
+
+        <label for="fatherName"><b>*Father's Name:</b></label>
+        <input type="text" id="fatherName" name="fatherName" placeholder="" required><br><br>
+
+        <label for="DOB"><b>*Date of Birth:</b></label>
+        <input type="text" id="DOB" name="DOB" placeholder="MM-DD-YYYY" required><br><br>
+
+        <label for="studentCnic"><b>*Student CNIC:</b></label>
+        <input type="text" id="studentCnic" name="studentCnic" placeholder="42201********" required><br><br>
+
+        <label for="fatherCnic"><b>*Father's CNIC:</b></label>
+        <input type="text" id="fatherCnic" name="fatherCnic" placeholder="42201********" required><br><br>
+
+        <label for="email"><b>*Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="" required><br><br>
+
+        <label for="gender"><b>*Gender (M/F):</b></label><br>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male" required> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female" required> Female
+        </label><br><br>
+
+        <label for="city"><b>*City:</b></label>
+        <input type="text" id="city" name="city" placeholder="" required><br><br>
+
+        <label for="pinCode"><b>*Pin Code:</b></label>
+        <input type="text" id="pinCode" name="pinCode" placeholder="" required><br><br>
+
+        <label for="state"><b>*State:</b></label>
+        <input type="text" id="state" name="state" placeholder="Pakistan" required><br><br>
+
+        <label for="address"><b>*Address:</b></label><br>
+        <textarea id="address" name="address" rows="4" placeholder="Enter address" required></textarea><br><br>
+
+        <label for="course"><b>*Course Applied For:</b></label><br>
+        <input type="radio" id="BCA" name="course" value="BCA" required> BCA<br>
+        <input type="radio" id="BSCS" name="course" value="BSCS" required> BSCS<br>
+        <input type="radio" id="Bcom" name="course" value="Bcom" required> B.com<br>
+        <input type="radio" id="BA" name="course" value="BA" required> B.A<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
